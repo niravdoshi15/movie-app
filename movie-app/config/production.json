@@ -1,0 +1,11 @@
+{
+    "express":{
+        "port":5000,
+        "host":"http://localhost"
+    },
+    "mongodb":{
+        "server":"localhost:27017",
+        "db":"moviesdb"
+    },
+    "env":"production"
+}

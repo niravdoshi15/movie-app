@@ -1,0 +1,19 @@
+{
+  "name": "indian-movies",
+  "version": "1.0.0",
+  "description": "Indian movies application API backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sonu Sathyadas",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.1",
+    "config": "^1.26.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11",
+    "multer": "^1.3.0"
+  }
+}

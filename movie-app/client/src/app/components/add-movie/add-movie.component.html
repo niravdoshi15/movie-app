@@ -1,0 +1,405 @@
+<!-- <div class="row">
+  <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <h3>New Movie Details</h3>
+    <form class="form-horizontal" [formGroup]="form" (submit)="addMovie()">
+      <label class="control-label col-sm-3 col-md-3">Movie Title</label>
+      <div class="col-sm-7 col-md-7">
+        <input type="text" class="form-control" formControlName="title" />
+      </div>
+
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Actors</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="actors" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Directors</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="directors" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Writers</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="writers" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Description</label>
+        <div class="col-sm-7 col-md-7">
+          <textarea class="form-control" formControlName="description" placeholder="Enter Movie Description"></textarea>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Music</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="music" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Singers</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="singers" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Genre</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="genre" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Released Year</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="year" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Runtime</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="runtime" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Language</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="language" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Awards</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="awards" placeholder="Separate by new lines" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Production</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="production" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Category</label>
+        <div class="col-sm-7 col-md-7">
+          <select class="form-control" formControlName="category">
+            <option value="" selected>--Select--</option>
+             <option*ngFor="let category of categories" value="{{category}}">{{category}}</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Writers</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="text" class="form-control" formControlName="writers" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Poster</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="file" id="poster" class="form-control" formControlName="genre" />
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="control-label col-sm-3 col-md-3">Trailer</label>
+        <div class="col-sm-7 col-md-7">
+          <input type="file" id="trailer" class="form-control" formControlName="trailer" />
+        </div>
+      </div>
+
+
+      <div class="form-group">        
+        <div class="col-sm-7 col-md-7 col-sm-offset-3 col-md-offset-3">
+          <button type="submit" name="sub" class="btn btn-primary">
+        <span class="glyphicon glyphicon-save">Save
+
+        </span>
+       </button>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</div> -->
+
+<div class="row">
+
+<div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+
+<h3>New Movie Details</h3>
+
+<form class="form-horizontal" [formGroup]="form" (submit)="addMovie()">
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Title</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="text" class="form-control" formControlName="title" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie actors</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="actors" placeholder="Separate actor names on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Directors</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="directors" placeholder="Separate director names on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Music</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="music" placeholder="Separate song names on new line "></textarea>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Singers</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="singers" placeholder="Separate singers on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Genre</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="genre" placeholder="Separate genre on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Languages</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="language" placeholder="Separate languages on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Release Year</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="number" class="form-control" formControlName="year" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Run time</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="text" class="form-control" formControlName="runtime" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Production</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="text" class="form-control" formControlName="production" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Description</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="description" ></textarea>
+
+</div>
+
+</div>
+
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Awards</label>
+
+<div class="col-sm-7 col-md-7">
+
+<textarea class="form-control" formControlName="awards" placeholder="Separate languages on new line "></textarea>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie Category</label>
+
+<div class="col-sm-7 col-md-7">
+
+<select class="form-control" formControlName="category">
+
+<option selected>--Select--</option>
+
+<option *ngFor="let c of categories" value="{{c}}" >{{c}}</option>
+
+
+</select>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie poster</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="file" id="poster" class="form-control" formControlName="poster" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<label class="control-label col-sm-3 col-md-3">Movie trailer</label>
+
+<div class="col-sm-7 col-md-7">
+
+<input type="file" id="trailer" class="form-control" formControlName="trailer" />
+
+</div>
+
+</div>
+
+
+
+<div class="form-group">
+
+<div class="col-md-9 col-md-offset-3 ">
+
+<button type="submit" class="btn btn-primary" name="sub">
+
+<span class="glyphicon glyphicon-save">Add</span>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+</form>
+
+</div>
+
+</div>

@@ -1,0 +1,45 @@
+<!-- Angular 2 -->
+<!-- <div class="row">
+  <div cass="col-md-3" *ngFor="let movie of moviesObsvr|async">
+    <div class="thumbnail">
+      <img *ngIf="movie.poster" class="thumbnail-image" src="{{movie.poster}}" />
+      <img *ngIf="!movie.poster" class="thumbnail-image" src="assests/placeholder.jpg" alt="Not available" />
+      <div></div>
+      <h4>{{movie.title}}</h4>
+      <p>Actors: {{movie.actors}}</p>
+      <p> <button [routerLink]="['/edit',movie._id]">Edit</button></p>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- Angular 4 -->
+<!-- <div class="row">
+  <div cass="col-md-3" *ngFor="let movie of moviesObsvr|async">
+    <div class="thumbnail">
+      <img *ngIf="movie.poster; else altimage" class="thumbnail-image" src="{{movie.poster}}" />
+      <ng-template #altimage>
+        <img class="thumbnail-image" src="assets/placeholder.jpg" alt="Not available" />
+      </ng-template>
+      <div></div>
+      <h4>{{movie.title}}</h4>
+      <p>Actors: {{movie.actors}}</p>
+      <p> <button [routerLink]="['/edit',movie._id]">Edit</button></p>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="row">
+    <div class="col-md-3" *ngFor="let movie of moviesObsvr|async">
+      <div class="thumbnail">
+        <img src="{{movie.poster|defaultImage:'assets/placeholder.jpg '}}" class="img-thumbnail"/>
+        <div></div>
+        <h4>{{movie.title}}</h4>
+        <p>Actors: {{movie.actors}}</p>
+        <p> <button [routerLink]="['/edit',movie._id]">Edit</button></p>
+      </div>
+    </div>
+  </div>
